@@ -9,7 +9,8 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "precontinental-unmourning-rubie.ngrok-free.dev",
-    'trui-bnk.onrender.com'
+    'trui-bnk.onrender.com',
+    'trui-bnk-production.up.railway.app'
 ]
 
 INSTALLED_APPS = [
